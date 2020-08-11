@@ -54,18 +54,19 @@ def run
   puts "Please enter a command:"
   command = gets.strip
     
-    if command != "exit" 
-    case command
+    if command == "exit" 
+      exit_jukebox
+   else 
+     case command
       when "help"
         help 
       when "list"
         list 
       when "play"
         play 
-      else 
-        exit_jukebox
+      
     end
-  exit_jukebox
+  
 end
 end
 
