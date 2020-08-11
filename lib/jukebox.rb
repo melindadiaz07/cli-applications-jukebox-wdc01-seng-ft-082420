@@ -50,7 +50,7 @@ end
 
 
 
-def run 
+def run(songs) 
   puts "Please enter a command:"
   command = gets.strip
     
